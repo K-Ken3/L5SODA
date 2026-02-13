@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 5 SODA | Rwanda Internships</title>
+    <link rel="stylesheet" href="/L5SODA/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SODA<span>Intern</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#listings">Jobs</a></li>
+            <li><a href="#">About SODA</a></li>
+            <li><a href="#" class="btn-post">Post a Job</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Launch Your Career in <span class="highlight">Rwanda</span></h1>
+            <p>Connecting Level 5 SODA students to the best local opportunities.</p>
+            <div class="stats">
+                <span><i class="fas fa-briefcase"></i> 12 Listings</span>
+                <span><i class="fas fa-map-marker-alt"></i> Kigali • Musanze • Huye</span>
+            </div>
+            <a href="#listings" class="cta-button">Browse Internships</a>
+        </div>
+    </header>
+
+    <section id="listings" class="listings-section">
+        <h2 class="section-title">Latest Opportunities</h2>
+        <div class="job-grid" id="jobGrid">
+            <div class="job-card" data-role="Front-End Intern">
+                <div class="job-tag">Kigali</div>
+                <h3>Front-End Intern (HTML/CSS)</h3>
+                <p class="company">Kigali Tech Hub</p>
+                <ul class="job-details">
+                    <li><i class="far fa-clock"></i> 2 Months</li>
+                    <li><i class="fas fa-money-bill-wave"></i> RWF 80,000/mo</li>
+                </ul>
+                <p class="skills">Skills: HTML, CSS, JavaScript</p>
+                <button class="apply-btn" onclick="openModal('Front-End Intern')">Apply Now</button>
+            </div>
+
+            <div class="job-card" data-role="IT Support">
+                <div class="job-tag">Musanze</div>
+                <h3>IT Support Trainee</h3>
+                <p class="company">Northern Hospitality Ltd</p>
+                <ul class="job-details">
+                    <li><i class="far fa-clock"></i> 1 Month</li>
+                    <li><i class="fas fa-calendar-alt"></i> Deadline: Mar 02</li>
+                </ul>
+                <p class="skills">Skills: Hardware, Networking</p>
+                <button class="apply-btn" onclick="openModal('IT Support Trainee')">Apply Now</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="applyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Apply for <span id="modalRole" class="highlight"></span></h2>
+            <form id="applyForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone (078...)" required>
+                <select required>
+                    <option value="">Select District</option>
+                    <option>Kigali (Gasabo/Kicukiro/Nyarugenge)</option>
+                    <option>Musanze</option>
+                    <option>Huye</option>
+                    <option>Rubavu</option>
+                </select>
+                <textarea placeholder="Why are you a good fit for this role?" rows="4"></textarea>
+                <label>Upload CV (PDF)</label>
+                <input type="file" accept=".pdf">
+                <button type="submit" class="submit-btn">Send Application</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/L5SODA/main.js"></script>
+</body>
+</html>
